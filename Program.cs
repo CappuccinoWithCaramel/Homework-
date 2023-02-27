@@ -1,4 +1,4 @@
-// Задача 1.
+﻿// Задача 1.
 
 // Console.WriteLine("Input number A");
 // int A = Convert.ToInt32(Console.ReadLine());
