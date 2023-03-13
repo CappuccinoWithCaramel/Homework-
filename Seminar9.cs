@@ -4,7 +4,7 @@
 //     {
 //         ShowNumbers(N-1);
 //         Console.Write(N+" ");
-        
+
 //     }
 // }
 
@@ -45,7 +45,7 @@
 
 //             ShowNumbers(N-1,M);
 //             Console.WriteLine(N+" ");
-        
+
 //         }
 //         else
 //         {
@@ -92,10 +92,10 @@
 // {
 //     if(N!=0)
 //     {
-        
+
 //         Console.Write(N+" ");
 //         ShowNumbers(N-1);
-        
+
 //     }
 // }
 
@@ -127,36 +127,3 @@
 // int B=Convert.ToInt32(Console.ReadLine());
 
 // Console.WriteLine(ShowNumbers(A,B));
-
-
-
-//Exercise 3.
-
-
-
-int Akkerman(int n, int m)
-{
-   if(n==0)
-   {
-        return m+1;    
-   }
-   if(n>0||m==0)
-   {
-        return Akkerman(n-1,1);
-   }
-   if(n>0||m>0)
-   {
-        return Akkerman(n-1,Akkerman(n,m-1));
-   }
-   else
-   {
-        return Akkerman(n,m);
-   }
-}
-
-Console.WriteLine("Input m");
-int n=Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input n");
-int m=Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine(Akkerman(n,m));
